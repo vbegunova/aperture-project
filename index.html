@@ -1,18 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo-link" href="./index.html">
+          <svg class="logo" width="128" height="31">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="main-nav">
+          <li class="item"><a class="link" href="#">Business areas</a></li>
+          <li class="item"><a class="link" href="#">Featured images</a></li>
+          <li class="item"><a class="link" href="#">Gear cage</a></li>
+          <li class="item"><a class="link" href="#">Contact</a></li>
+        </ul>
+        <button type="button" class="btn">Get template</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <p class="suptitle">Photographer & Filmmaker</p>
+          <h1 class="hero-title">Aperture Studios</h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+            imperdiet. Nunc ut sem vitae risus tristique posuere.
+          </p>
+          <ul class="settings-list">
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#shutter"></use>
+              </svg>
+              <span class="settings">1/2000s</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#aperture"></use>
+              </svg>
+              <span class="settings">f/11</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="32" height="16">
+                <use href="./images/icons.svg#iso"></use>
+              </svg>
+              <span class="settings">100</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="10" height="16">
+                <use href="./images/icons.svg#location-pin"></use>
+              </svg>
+              <span class="settings">Iceland</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Specialization -->
+      <section class="specialization">
+        <div class="container">
+          <h2 class="title">What we do.</h2>
+          <p class="specialization-description">
+            The areas that we're specialized in.
+          </p>
+          <ul class="gallery-list">
+            <li class="item">
+              <img
+                class="gallery-img"
+                src="./images/gallery-1_576.jpg"
+                alt="Gallery 1"
+              />
+              <div class="gallery-content">
+                <h3 class="item-title">Product Photography</h3>
+                <p class="item-text">
+                  Cras commodo consequat orci, in convallis risus egestas non.
+                  Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+                  faucibus libero ac, cursus quam.
+                </p>
+                <button class="gallery-btn" type="button">
+                  <div class="black-icon"></div>
+                  <span class="btn-text">Read more</span>
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                class="gallery-img"
+                src="./images/gallery-2_576.jpg"
+                alt="Gallery 2"
+              />
+              <div class="gallery-content">
+                <h3 class="item-title">Architecture Photography</h3>
+                <p class="item-text">
+                  Aenean porta neque eget consequat fringilla. Vestibulum
+                  ultrices, orci nec egestas pharetra, ligula est semper enim,
+                  nec auctor sapien leo nec purus. Fusce tincidunt aliquet
+                  sapien, sit amet rhoncus leo imperdiet nec.
+                </p>
+                <button class="gallery-btn" type="button">
+                  <div class="black-icon"></div>
+                  <span class="btn-text">Read more</span>
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                class="gallery-img"
+                src="./images/gallery-3_576.jpg"
+                alt="Gallery 3"
+              />
+              <div class="gallery-content">
+                <h3 class="item-title">Drone Photography</h3>
+                <p class="item-text">
+                  Mauris euismod elit et nisi ultrices, ut faucibus orci
+                  tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo
+                  consequat orci, in convallis risus egestas non. Nulla
+                  efficitur auctor hendrerit. Etiam ut orci varius, faucibus
+                  libero ac, cursus quam.
+                </p>
+                <button class="gallery-btn" type="button">
+                  <div class="black-icon"></div>
+                  <span class="btn-text">Read more</span>
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <img
+                class="gallery-img"
+                src="./images/gallery-4_576.jpg"
+                alt="Gallery 4"
+              />
+              <div class="gallery-content">
+                <h3 class="item-title">Wildlife Photography</h3>
+                <p class="item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus
+                  feugiat eros quis consectetur. Morbi neque ex, condimentum
+                  dapibus congue et, vulputate ut ligula. Vestibulum sit amet
+                  urna turpis.
+                </p>
+                <button class="gallery-btn" type="button">
+                  <div class="black-icon"></div>
+                  <span class="btn-text">Read more</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sunset photo -->
+      <section class="sunset">
+        <div class="container">
+          <div class="sunset-content">
+            <h3 class="title">Sunset at Mount Fuji</h3>
+            <p class="sunset-description">
+              Duis tristique sed lorem a vestibulum. Cras commodo consequat
+              orci, in convallis risus egestas non.
+            </p>
+          </div>
+          <ul class="settings-list">
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#shutter"></use>
+              </svg>
+              <span class="settings">1''</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#aperture"></use>
+              </svg>
+              <span class="settings">f/16</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="32" height="16">
+                <use href="./images/icons.svg#iso"></use>
+              </svg>
+              <span class="settings">400</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="10" height="16">
+                <use href="./images/icons.svg#location-pin"></use>
+              </svg>
+              <span class="settings">Japan</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tools -->
+      <section class="tools">
+        <div class="container">
+          <p class="suptitle">The Gear cage</p>
+          <h2 class="title">The tools that we use.</h2>
+          <p class="tools-description">
+            The say that "no place is boring if you've had a good night's sleep
+            and have a pocket full of unexposed film". While we don't shoot (a
+            lot) of film these days — these are the tools that we actually use
+            everyday to capture the amazing things around us.
+          </p>
+          <button class="tools-btn" type="button">
+            <div class="black-icon"></div>
+            <span class="btn-text">Check it out</span>
+          </button>
+          <ul class="settings-list">
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#shutter"></use>
+              </svg>
+              <span class="settings">0,8''</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#aperture"></use>
+              </svg>
+              <span class="settings">f/5,6</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="32" height="16">
+                <use href="./images/icons.svg#iso"></use>
+              </svg>
+              <span class="settings">100</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="10" height="16">
+                <use href="./images/icons.svg#location-pin"></use>
+              </svg>
+              <span class="settings">Sweden</span>
+            </li>
+          </ul>
+        </div>
+        <img class="tools-img" src="./images/tools-img_720.jpg" alt="Tools" />
+      </section>
+
+      <!-- Leafs photo -->
+      <section class="leafs">
+        <div class="container">
+          <div class="leafs-content">
+            <h3 class="title">Monstera Leafs</h3>
+            <p class="leafs-description">
+              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+              ultrices, ut faucibus orci tincidunt.
+            </p>
+          </div>
+          <ul class="settings-list">
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#shutter"></use>
+              </svg>
+              <span class="settings">1/400s</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#aperture"></use>
+              </svg>
+              <span class="settings">f/3,5</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="32" height="16">
+                <use href="./images/icons.svg#iso"></use>
+              </svg>
+              <span class="settings">100</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="10" height="16">
+                <use href="./images/icons.svg#location-pin"></use>
+              </svg>
+              <span class="settings">Costa Rica</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Clients -->
+      <section class="clients">
+        <div class="container">
+          <h2 class="title">Past clients</h2>
+          <p class="clients-description">Trusted by your favourite companies</p>
+          <ul class="clients-list">
+            <li class="item">
+              <a href="#">
+                <svg class="client-icon" width="128" height="30">
+                  <use href="./images/icons.svg#client-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="client-icon" width="128" height="78">
+                  <use href="./images/icons.svg#client-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="client-icon" width="128" height="20">
+                  <use href="./images/icons.svg#client-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="client-icon" width="128" height="36">
+                  <use href="./images/icons.svg#client-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="client-icon" width="128" height="32">
+                  <use href="./images/icons.svg#client-5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Starfall photo -->
+      <section class="starfall">
+        <div class="container">
+          <div class="starfall-content">
+            <h3 class="title">Star fall in the Himalayas</h3>
+            <p class="starfall-description">
+              Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
+              condimentum dapibus congue et, vulputate ut ligula.
+            </p>
+          </div>
+          <ul class="settings-list">
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#shutter"></use>
+              </svg>
+              <span class="settings">6''</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="16" height="16">
+                <use href="./images/icons.svg#aperture"></use>
+              </svg>
+              <span class="settings">f/11</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="32" height="16">
+                <use href="./images/icons.svg#iso"></use>
+              </svg>
+              <span class="settings">800</span>
+            </li>
+            <li class="item">
+              <svg class="settings-icon" width="10" height="16">
+                <use href="./images/icons.svg#location-pin"></use>
+              </svg>
+              <span class="settings">Nepal</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="title">
+            Need help with photography <br />
+            or videography?
+          </h2>
+          <p class="text">We're here for you!</p>
+          <button class="contact-btn" type="button">
+            <div class="black-icon"></div>
+            <span class="btn-text">Get in touch</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-description">
+            <a class="logo-link" href="./index.html">
+              <svg class="logo" width="128" height="31">
+                <use href="./images/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <p class="description">
+              Photographers & videographers capturing the world around us.
+            </p>
+          </div>
+          <div class="footer-column-list area">
+            <h3 class="list-title">Business areas</h3>
+            <ul class="footer-list">
+              <li class="item"><a href="#">Product Photography</a></li>
+              <li class="item"><a href="#">Architecture Photography</a></li>
+              <li class="item"><a href="#">Drone Photography</a></li>
+              <li class="item"><a href="#">Wildlife Photography</a></li>
+            </ul>
+          </div>
+          <div class="footer-column-list pages">
+            <h3 class="list-title">Pages</h3>
+            <ul class="footer-list">
+              <li class="item"><a href="#">Gear cage</a></li>
+              <li class="item"><a href="#">Featured images</a></li>
+              <li class="item"><a href="#">Contact</a></li>
+              <li class="item"><a href="#">Style guide</a></li>
+              <li class="item"><a href="#">Instructions</a></li>
+              <li class="item"><a href="#">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-subscribe">
+          <div>
+            <h3 class="subscribe-title">Subscribe to our newsletter</h3>
+            <p class="subscribe-text">Read about all the things we do.</p>
+          </div>
+          <form class="footer-form" autocomplete="off">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" type="submit"></button>
+          </form>
+        </div>
+        <div class="line"></div>
+        <div class="copyright">
+            <p class="copyright-text">&#169 Aperture Photography, Inc. All rights reserved. Licensing.</p>
+            <ul class="social-list">
+                <li>
+                    <a href="#">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
