@@ -548,6 +548,10 @@ address {
     width: 220px;
 }
 
+.area {
+    margin-right: 16px;
+}
+
 .footer .list-title {
     margin-bottom: 10px;
 
